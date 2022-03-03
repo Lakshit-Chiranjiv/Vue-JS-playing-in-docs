@@ -1,11 +1,13 @@
 <template>
+  <h1>VUE JS - playing in the docs</h1>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <hr>
+  <HelloWorld/>
+  <hr>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'App',
   components: {
