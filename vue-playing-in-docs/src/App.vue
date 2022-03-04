@@ -4,14 +4,21 @@
   <hr>
   <HelloWorld/>
   <hr>
+  <Templates/>
+  <hr>
+  <Directives/>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import Templates from './components/Templates.vue'
+import Directives from './components/Directives.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    Templates,
+    Directives
   }
 }
 </script>
