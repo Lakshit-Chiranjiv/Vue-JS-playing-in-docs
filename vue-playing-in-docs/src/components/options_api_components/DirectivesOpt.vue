@@ -8,6 +8,9 @@
   <p v-bind:id="paraId">This is a green paragraph using v-bind id</p>
   <p :id="paraId">This is a green paragraph using v-bind id</p>
   <p :class="paraClass">This is a orange paragraph using v-bind class</p>
+
+  <h4>multiple v-binds</h4>
+  <p v-bind="multipleBindObj">This paragraph is red and large in size</p>
 </template>
 
 <script>
@@ -17,7 +20,11 @@ export default {
         return{
             rawHtml: "<span>This is a span tag in blue color</span>",
             paraId: "greenPara",
-            paraClass: "orangePara"
+            paraClass: "orangePara",
+            multipleBindObj: {
+                id: "bigPara",
+                class: "redPara"
+            }
         }
     }
 }
@@ -35,5 +42,11 @@ export default {
     }
     #greenPara{
         color: green;
+    }
+    .redPara{
+        color: red;
+    }
+    #bigPara{
+        font-size: 24px;
     }
 </style>
